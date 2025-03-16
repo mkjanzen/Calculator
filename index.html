@@ -16,17 +16,19 @@
       height: 120px;
       font-size: xxx-large;
       text-shadow:
-      -1px -1px 0 #000,
-       0   -1px 0 #000,
-       1px -1px 0 #000,
-       1px  0   0 #000,
-       1px  1px 0 #000,
-       0    1px 0 #000,
-      -1px  1px 0 #000,
-      -1px  0   0 #000;
+        -1px -1px 0 #000,
+         0   -1px 0 #000,
+         1px -1px 0 #000,
+         1px  0   0 #000,
+         1px  1px 0 #000,
+         0    1px 0 #000,
+        -1px  1px 0 #000,
+        -1px  0   0 #000;
+      border: none;
     }
     .key:hover {
       cursor: pointer;
+      filter: brightness(50%);
     }
     .numbers {
       margin-top: -492px;
@@ -35,22 +37,17 @@
       color: white;
       background-color: rgb(48, 48, 48);
     }
-    .numbers button:hover {
-      background-color: rgba(48, 48, 48, 0.5);
-    }
     .operators button {
       color: white;
       background-color: orange;
     }
-    .operators button:hover {
-      background-color: rgba(255, 166, 0, 0.5);
-    }
+
     .numPad {
       margin-top: -97px;
     }
     .result {
       text-align: right;
-      width: 491px;
+      width: 492px;
       height: 120px;
       background-color: white;
       font-size: 650%;
@@ -73,27 +70,27 @@
     </p>
     <div class="numPad">
       <div class="operators">
-        <button class="key" style="background-color: gray;">Del</button>
-        <button class="key" style="background-color: gray;">+/-</button>
-        <button class="key" style="background-color: gray;">%</button>
-        <button class="key">÷</button><br>
-        <button class="key" style="margin-top: 4px;margin-left: 372px;">x</button><br>
-        <button class="key" style="margin-top: 4px;margin-left: 372px;">-</button><br>
-        <button class="key" style="margin-top: 4px;margin-left: 372px;">+</button><br>
-        <button class="key" style="margin-top: 4px;margin-left: 372px;">=</button>
+        <button class="key" id="delete" style="background-color: gray;">Del</button>
+        <button class="key" id="plus" style="background-color: gray;">+/-</button>
+        <button class="key" id="mod" style="background-color: gray;">%</button>
+        <button class="key" id="divide" >÷</button><br>
+        <button class="key" id="times" style="margin-top: 4px;margin-left: 372px;">x</button><br>
+        <button class="key" id="minus" style="margin-top: 4px;margin-left: 372px;">-</button><br>
+        <button class="key" id="plus" style="margin-top: 4px;margin-left: 372px;">+</button><br>
+        <button class="key" id="equals" style="margin-top: 4px;margin-left: 372px;">=</button>
       </div>
       <div class="numbers">
-        <button class="key">7</button>
-        <button class="key">8</button>
-        <button class="key">9</button><br>
-        <button class="key" style="margin-top: 4px">4</button>
-        <button class="key">5</button>
-        <button class="key">6</button><br>
-        <button class="key" style="margin-top: 4px">1</button>
-        <button class="key">2</button>
-        <button class="key">3</button><br>
-        <button class="key" style="margin-top: 4px; margin-left: 124px;">0</button>
-        <button class="key" style="margin-top: 4px; margin-left: px;">.</button>
+        <button class="key" id="7">7</button>
+        <button class="key" id="8">8</button>
+        <button class="key" id="9">9</button><br>
+        <button class="key" id="4" style="margin-top: 4px">4</button>
+        <button class="key" id="5">5</button>
+        <button class="key" id="6">6</button><br>
+        <button class="key" id="1" style="margin-top: 4px">1</button>
+        <button class="key" id="2">2</button>
+        <button class="key" id="3">3</button><br>
+        <button class="key" id="0" style="margin-top: 4px; margin-left: 124px;">0</button>
+        <button class="key" id="point" style="margin-top: 4px; margin-left: px;">.</button>
       </div>
     </div>
   </div>
