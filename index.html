@@ -14,9 +14,19 @@
     .key {
       width: 120px;
       height: 120px;
-      font-size: 300%;
-      -webkit-text-stroke-width: px;
-      -webkit-text-stroke-color: black;
+      font-size: xxx-large;
+      text-shadow:
+      -1px -1px 0 #000,
+       0   -1px 0 #000,
+       1px -1px 0 #000,
+       1px  0   0 #000,
+       1px  1px 0 #000,
+       0    1px 0 #000,
+      -1px  1px 0 #000,
+      -1px  0   0 #000;
+    }
+    .key:hover {
+      cursor: pointer;
     }
     .numbers {
       margin-top: -492px;
@@ -25,9 +35,15 @@
       color: white;
       background-color: rgb(48, 48, 48);
     }
+    .numbers button:hover {
+      background-color: rgba(48, 48, 48, 0.5);
+    }
     .operators button {
       color: white;
       background-color: orange;
+    }
+    .operators button:hover {
+      background-color: rgba(255, 166, 0, 0.5);
     }
     .numPad {
       margin-top: -97px;
@@ -44,6 +60,7 @@
       margin-left: 715px;
       margin-top: -20px;
     }
+    
   </style>
 </head>
 <body style="background-color: black;">
@@ -75,7 +92,7 @@
         <button class="key" style="margin-top: 4px">1</button>
         <button class="key">2</button>
         <button class="key">3</button><br>
-        <button class="key" style="margin-top: 4px; margin-left: 124px;">+</button>
+        <button class="key" style="margin-top: 4px; margin-left: 124px;">0</button>
         <button class="key" style="margin-top: 4px; margin-left: px;">.</button>
       </div>
     </div>
